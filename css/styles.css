@@ -483,6 +483,7 @@ text-align: center;
     margin-right: 32px;
     justify-content: space-evenly;
     align-items: flex-end;
+    outline: 1px solid red;
 }
 
 .actions button {
@@ -494,6 +495,7 @@ border: none;
 
 margin-bottom: 30px;
 stroke: none;
+outline: 1px solid red;
 
 }
 
@@ -512,7 +514,7 @@ stroke: none;
         /*outline: 1px solid red;*/
     }
 
-.button-icon:hover,
+
 .button-ic:hover {
     fill: var(--accent-colornav);
 }
@@ -524,11 +526,13 @@ stroke: none;
     height: 20px;
     background-color: #ffffff;
     fill:#AFB1B8;
-    /*outline: 1px solid red;*/
+    outline: 1px solid red;
     justify-content: center;
 }
 
-
+.button-icon:focus {
+    fill: var(--accent-colornav);
+}
 
 
 
@@ -570,10 +574,11 @@ box-sizing: border-box;
 border-radius: 4px;
 }
 
-.iconclient:hover {
+.logo-1:hover {
     fill: var(--accent-colornav);
 }
 
+       
 
 /*.logo {
     font-family: Raleway;
@@ -593,6 +598,7 @@ color: var(--accent-color);
     margin-bottom:20.77px;
     margin-left:63px;
     margin-right:62.73px;
+    background-image: #AFB1B8;
 }
 
 .logo-2 {
@@ -617,6 +623,7 @@ color: var(--accent-color);
     margin-bottom: 23.98px;
     margin-left: 45px;
     margin-right: 45.34px;
+    background-image: #AFB1B8;
 }
 
 .logo-5 {
@@ -931,10 +938,13 @@ text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius:50%;
     border:none;
-    
-    margin-left: 10px;            /*отступы в иконках футера на соцсети*/
+    margin-left: 10px;           /*отступы в иконках футера на соцсети*/
+    /*outline: 1px solid red;*/
 }
 
+.actions-footer .button-iconfooter:hover {
+    fill: var(--accent-colornav);
+}
 
 /*.button-iconfooter {
     display: flex;
@@ -957,8 +967,8 @@ display: flex;
     width:40px;
     height:20px;
     background-position: center;
-fill: #ffffff;
-
+ fill: #ffffff;
+ /*outline: 1px solid red;*/
 }
 
 
