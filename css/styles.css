@@ -505,7 +505,6 @@ text-align: center;
     display: flex;
     padding: 0;
     margin: 0;
-    /*outline: 1px solid black;*/
     list-style: none;
     stroke: none;
     justify-content: space-between;
@@ -522,8 +521,6 @@ text-align: center;
     background-color: #ffffff;
 padding: 0;
 border: none;
-
-margin-bottom: 30px;
 stroke: none;
 outline: 1px solid red;
 
@@ -542,6 +539,8 @@ outline: 1px solid red;
         fill: #ffffff;*/
         fill:#AFB1B8;
         /*outline: 1px solid red;*/
+        align-items: center;
+        justify-content:center;
     }
 
 
@@ -551,13 +550,15 @@ outline: 1px solid red;
 
 
 .button-icon {
-    display: flex;
+    display: inline-block;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
     fill:#AFB1B8;
     outline: 1px solid red;
     justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .button-icon:focus {
@@ -565,7 +566,9 @@ outline: 1px solid red;
 }
 
 
-
+.button-icon + .button-icon {          
+    margin-left: 10px;
+}
 
 
 /*ПОСТОЯННЫЕ КЛИЕНТЫ*/
@@ -905,14 +908,44 @@ color: var(--accent-color);
         color: #FFFFFF;
     }
 
-    .mail {
-       
+    .footer-web {
+        margin-top:0;
+        margin-bottom: 20px;
+    }
+    
+    /* .adress-footer {
+        margin-bottom:9px;
+    } */
+
+    /* .footer-adress {
+        margin-top:0;
+        margin-top:0;
+        padding-bottom:0;
+    }
+     */
+    
+/* .footer-mail {
+    margin-top:0;
+} */
+
+.footer-phone {
+    margin-top:0;
+    margin-bottom:0;
+}
+
+
+
+    .mail { 
     font-size: 14px;
     line-height: 1.71;
         color: rgba(255, 255, 255, 0.6);
     }
 
-    .mail-base {
+
+
+
+
+    /* .mail-base {
         font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -923,10 +956,11 @@ color: var(--accent-color);
     line-height: 1.14;
     
     color: rgba(255, 255, 255, 0.6);  
-    }
+    } */
     
     .phone {
         display: flex;
+        margin-bottom:0;
         font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -940,7 +974,7 @@ color: var(--accent-color);
     vertical-align:top;
     justify-content: start;
     margin-left:70px;
-    /* align-items:baseline;*/
+    align-items:baseline;
 } 
 
 
@@ -963,7 +997,7 @@ text-transform: uppercase;
 .level {
     margin:0;
     padding:0;
-    justify-content:centerbaseline;
+    justify-content:baseline;
 }
 
 
@@ -981,39 +1015,43 @@ text-transform: uppercase;
 }*/
 
 .actions-footer {
-    /*width: fit-content;*/
     display: flex;
-    /* flex-wrap: wrap; */
-    margin-top: 20px;
-    
-    
+    margin-top: 20px; 
+    margin-left:-10px;
+
 }
 
-/* .actions-footer .button-footer + .button-footer {
-    margin-left: 10px;
-} */
 
-
-
-
-
-
-.button-footer {
-    
+.button-footer {            /*li social links*/
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius:50%;
     border:none;
-    margin-left:10px;           /*отступы в иконках футера на соцсети*/
-    /*outline: 1px solid red;*/
+    margin-left: 10px;
+    /* outline: 1px solid red; */
+    justify-content: center;
 }
 
-.actions-footer .button-iconfooter:hover {
+
+
+.actions-footer .button-iconfooter:hover  {
     fill: var(--accent-colornav);
 }
+
+.button-iconfooter {
+    display: flex;
+    width:40px;
+    height:20px;
+    background-position: center;
+ fill: #ffffff;
+ /* outline: 1px solid red; */
+}
+
+
+
 
 /*.button-iconfooter {
     display: flex;
@@ -1031,14 +1069,7 @@ display: flex;
     margin-left: auto;
 }*/
 
-.button-iconfooter {
-    display: flex;
-    width:40px;
-    height:20px;
-    background-position: center;
- fill: #ffffff;
- /*outline: 1px solid red;*/
-}
+
 
 
     
@@ -1100,15 +1131,6 @@ box-sizing: border-box;
 }
 
 
-.footer-web {
-    margin-top:0;
-    
-}
-
-.footer-adress {
-    margin-top:0;
-
-}
 
 
 
@@ -1126,14 +1148,14 @@ box-sizing: border-box;
 
 
 
-.base {
+/* .base {
     width: 1200;
     /*align-items: auto;
     display: flex;
     margin-left: auto;
-    margin-right: auto;*/ 
+    margin-right: auto;
 }
-
+ */
 
 
 
