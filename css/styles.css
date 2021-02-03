@@ -606,21 +606,16 @@ color: var(--primary-text-color);
     border: 1px solid #AFB1B8;
 box-sizing: border-box;
 border-radius: 4px;
+color:#AFB1B8;
 }
 
+.iconclient:hover {
+    color: var(--accent-colornav);
+}
 
-
-       
-
-/*.logo {
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-color: var(--accent-color);
-
-}*/
+.iconclient:focus {
+    color: var(--accent-colornav);
+}
 
 
 .logo-1 {
@@ -631,7 +626,7 @@ color: var(--accent-color);
     margin-left:63px;
     margin-right:62.73px;
     background-image: #AFB1B8;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
 .logo-1:hover,
@@ -640,7 +635,7 @@ color: var(--accent-color);
 .logo-4:hover,
 .logo-5:hover,
 .logo-6:hover {
-    fill: var(--accent-colornav);
+    fill: currentColor;
 }
 
 .logo-1:focus,
@@ -649,7 +644,7 @@ color: var(--accent-color);
 .logo-4:focus,
 .logo-5:focus,
 .logo-6:focus {
-    fill: var(--accent-colornav);
+    fill: currentColor;
 }
 
 
@@ -657,7 +652,7 @@ color: var(--accent-color);
     width: 40px;
     height: 52px;
     margin: 19px 65px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
 .logo-3 {
@@ -667,7 +662,7 @@ color: var(--accent-color);
     margin-bottom: 23.4px;
     margin-left: 65px;
     margin-right: 64px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
 .logo-4 {
@@ -678,7 +673,7 @@ color: var(--accent-color);
     margin-left: 45px;
     margin-right: 45.34px;
     background-image: #AFB1B8;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
 .logo-5 {
@@ -688,7 +683,7 @@ color: var(--accent-color);
     margin-bottom: 21px;
     margin-left: 56px;
     margin-right: 55px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
 .logo-6 {
@@ -698,7 +693,7 @@ color: var(--accent-color);
     margin-bottom: 22.56px;
     margin-left: 41px;
     margin-right: 40.52px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
 
