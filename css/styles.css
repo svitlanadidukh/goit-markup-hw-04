@@ -158,7 +158,7 @@ color: var(--title-text-color)
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--text-color);
     }
     
     .contacts-mail::before {                           /*задаем картинку впереди мейл*/
@@ -167,10 +167,12 @@ color: var(--title-text-color)
         width: 16px;
         height: 12px;
         margin-right: 10px;
-        background-image: url('../img/envelope.svg');
+        background-image: url('../img/envelope(grey).svg');
         background-repeat: no-repeat;
         background-position: center; 
     }
+
+   
     
     .contacts-phone {
     font-weight: 500;
@@ -178,6 +180,7 @@ color: var(--title-text-color)
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+
     }
     
     .contacts-phone::before {
@@ -189,21 +192,28 @@ color: var(--title-text-color)
         background-image: url('../img/Vector.svg');
         background-repeat: no-repeat;
         background-position: center;
+       
+        
     }
+
+   
     
 .contacts .contacts-mail:hover,       /*ховер на мейл и телефон*/
 .contacts .contacts-phone:hover {
-color: var(--accent-colornav);
+color: var(--accent-color);
+}
+
+.contacts .contacts-mail:hover::before,       /*ховер на мейл и телефон*/
+.contacts .contacts-phone:hover::before {
+color: var(--accent-color);
 }
 
 .contacts .contacts-mail:focus,         /*фокус на мейл и телефон*/
 .contacts .contacts-phone:focus {
-color: var(--accent-colornav);
+color: var(--accent-color);
 }
 
-.contacts:hover::before {
-    color: red;
-}
+
 
 
 
@@ -747,10 +757,8 @@ color:#AFB1B8;
         border: 1px solid #EEEEEE;
     }
     
-.items-cover:hover, 
-.items-cover:focus {
-    color:blue;
-}
+
+
 
 
 
@@ -768,9 +776,8 @@ color:#AFB1B8;
     font-size: 16px;
     line-height: 1.63;
     padding: 6px 22 px;
-    color: #FFFFFF;
-    background-color: #2196F3;   
-    /* shadow-middle */
+    color: black;
+    background: #F5F4FA;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     text-align: center;
@@ -783,7 +790,8 @@ color:#AFB1B8;
 
 .btn:hover,
 .btn:focus{
-    color: var(--accent-colornav);
+    background-color: var(--accent-color);
+    color: var(--buttontext-color);
 }
 
 
@@ -810,29 +818,93 @@ color:#AFB1B8;
     text-align: center;
     border: 1px solid transparent;
     }
+
     
-    .btna:hover,
-    .btna:focus {
-        color: var(--accent-colornav);
-        min-width: 128px;
+    .btn {
+        min-width: 73px;
     }
+
+     .btna:hover,
+     .btna:hover {
+        background-color: var(--accent-color);
+        color: var(--buttontext-color);
+     }
+
+
+    /* .btna:hover,
+    .btnb:hover,
+    .btnc:hover,
+    .btnd:hover,
+    .btnd:hover {
+        color: var(--accent-colornav);
+    } */
+
     
     .btnb {
         min-width: 145px;
     }
     
+    .btnb:hover,
+    .btnb:focus {
+        background-color: var(--accent-color);
+        color: var(--buttontext-color);
+    }
+
     .btnc {
         min-width: 103px;
+    }
+
+    .btnc:hover,
+    .btnc:focus {
+        background-color: var(--accent-color);
+        color: var(--buttontext-color);
     }
     
     .btnd {
         min-width: 130px;
     }
     
-    /*.item {
+    .btnd:hover,
+    .btnd:focus {
+        background-color: var(--accent-color);
+        color: var(--buttontext-color);
+    }
+
+    
+    /* .item {
         outline: 2px solid tomato;
         
-    }*/
+    } */
+        
+    .items-cover {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .overlay {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba (33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+
+  .items-cover:hover .overlay,
+  .items-cover:focus .overlay {
+      transform: translateY(0);
+  }
+
+  .ppt {
+      padding-left: 24px;
+      padding-top: 63px;
+      font-family: Roboto;
+      font-style: normal;
+  }
+
+
 
     .section-title {
         /*padding: 20px 24px 4px;*/
