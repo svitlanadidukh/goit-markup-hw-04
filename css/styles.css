@@ -160,8 +160,10 @@ color: var(--title-text-color)
     letter-spacing: 0.02em;
     color: var(--text-color);
     }
+
+  
     
-    .contacts-mail::before {                           /*задаем картинку впереди мейл*/
+    /* .contacts-mail::before {                           
         content:'';
         display: inline-block;
         width: 16px;
@@ -170,17 +172,26 @@ color: var(--title-text-color)
         background-image: url('../img/envelope(grey).svg');
         background-repeat: no-repeat;
         background-position: center; 
-    }
+    } */
 
-   
+   .envelope-icon {
+       display:inline-block;
+       margin-right: 10px;
+       fill: currentColor;
+   }
     
+   .envelope-icon:hover {
+       background-color:red;
+       border-color: red;
+       fill:green;
+   }
+
     .contacts-phone {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
-
     }
     
     .contacts-phone::before {
@@ -192,27 +203,25 @@ color: var(--title-text-color)
         background-image: url('../img/Vector.svg');
         background-repeat: no-repeat;
         background-position: center;
-       
-        
     }
 
-   
+
     
 .contacts .contacts-mail:hover,       /*ховер на мейл и телефон*/
 .contacts .contacts-phone:hover {
 color: var(--accent-color);
 }
 
-.contacts .contacts-mail:hover::before,       /*ховер на мейл и телефон*/
-.contacts .contacts-phone:hover::before {
+.contacts .contacts-mail:hover::before {
 color: var(--accent-color);
+
 }
+
 
 .contacts .contacts-mail:focus,         /*фокус на мейл и телефон*/
 .contacts .contacts-phone:focus {
 color: var(--accent-color);
 }
-
 
 
 
@@ -554,12 +563,12 @@ stroke: none;
     }
 
 
-.button-ic:hover {
+/* .button-ic:hover {
     fill: var(--accent-colornav);
-}
+} */
 
 .button-ic:hover {
-    fill: var(--accent-colornav);
+    fill: var(--buttontext-color);
 }
 
 .button-icon {
@@ -568,6 +577,7 @@ stroke: none;
     height: 20px;
     background-color: #ffffff;
     fill:#AFB1B8;
+    border-radius:50%;
     /* outline: 1px solid red; */
     justify-content: center;
     margin-bottom: 30px;
@@ -575,8 +585,13 @@ stroke: none;
 }
 
 .button-icon:focus-within {
-    fill: var(--accent-colornav);
+    fill: var(--accent-color);
 }
+
+.button-icon:hover {
+    background-color: var(--accent-color);
+}
+
 
 
 .button-icon + .button-icon {          
@@ -623,13 +638,15 @@ color:#AFB1B8;
 }
 
 .iconclient:hover {
-    color: var(--accent-colornav);
-    border-color: var(--accent-colornav);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
-.iconclient:focus {
-    color: var(--accent-colornav);
-    border-color: var(--accent-colornav);
+.iconclient:focus-within {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 
@@ -1099,9 +1116,14 @@ text-transform: uppercase;
     color: darkgreen;
 }
 
-.actions-footer .button-iconfooter:hover  {
+/* .actions-footer .button-iconfooter:hover  {
     fill: var(--accent-colornav);
+} */
+
+.actions-footer .button-footer:hover {
+    background-color: var(--accent-color);
 }
+
 
 .button-iconfooter {
     display: flex;
