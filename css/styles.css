@@ -574,7 +574,7 @@ stroke: none;
     align-items: center;
 }
 
-.button-icon:focus {
+.button-icon:focus-within {
     fill: var(--accent-colornav);
 }
 
