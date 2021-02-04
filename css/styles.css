@@ -154,6 +154,7 @@ color: var(--title-text-color)
 }
 
 .contacts-mail {
+    margin-left: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -163,7 +164,7 @@ color: var(--title-text-color)
 
   
     
-    /* .contacts-mail::before {                           
+    /* .contacts-mail::before {           картинка впереди почты                
         content:'';
         display: inline-block;
         width: 16px;
@@ -174,19 +175,23 @@ color: var(--title-text-color)
         background-position: center; 
     } */
 
-   .envelope-icon {
-       display:inline-block;
-       margin-right: 10px;
-       fill: currentColor;
+   .envelope-icon {                   /*конверт - оригінальний колір*/
+       display:flex;
+       fill: var(--text-color); 
    }
-    
-   .envelope-icon:hover {
-       background-color:red;
-       border-color: red;
-       fill:green;
+   
+
+   .envelope-icon:hover .letter {      /*конверт - ховер*/
+       fill: var(--accent-color)   
    }
+     
+   .envelope-icon:focus .letter {      /*конверт - фокус*/
+    fill: var(--accent-color)   
+}
+
 
     .contacts-phone {
+    margin-left: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -194,8 +199,8 @@ color: var(--title-text-color)
     color: var(--text-color);
     }
     
-    .contacts-phone::before {
-        content:'';                               /*задаем картинку впереди телефона*/
+    /* .contacts-phone::before {       картинка впереди телефона
+        content:'';                               
         display: inline-block;
         width: 10px;
         height: 16px;
@@ -203,7 +208,23 @@ color: var(--title-text-color)
         background-image: url('../img/Vector.svg');
         background-repeat: no-repeat;
         background-position: center;
+    } */
+
+
+    .phone-icon {                   /*телефон - оригінальний колір*/
+        display:flex;
+        fill: var(--text-color);
+        justify-content: first baseline;
     }
+
+    .phone-icon:hover .letter {      /*телефон - ховер*/
+        fill: var(--accent-color)   
+    }
+      
+    .phone-icon:focus .letter {      /*телефон - фокус*/
+     fill: var(--accent-color)   
+ }
+
 
 
     
@@ -212,10 +233,6 @@ color: var(--title-text-color)
 color: var(--accent-color);
 }
 
-.contacts .contacts-mail:hover::before {
-color: var(--accent-color);
-
-}
 
 
 .contacts .contacts-mail:focus,         /*фокус на мейл и телефон*/
@@ -813,6 +830,9 @@ color:#AFB1B8;
     color: var(--buttontext-color);
 }
 
+.item .btn:focus {
+    background: orange;
+}
 
 .button1,
 .btna,
@@ -899,6 +919,11 @@ color:#AFB1B8;
         position: relative;
         overflow: hidden;
     }
+
+     .items-picture:focus {
+         color: orange;
+     }
+
 
     .overlay {
     position:absolute;
