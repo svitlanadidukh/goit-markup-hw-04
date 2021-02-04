@@ -624,10 +624,12 @@ color:#AFB1B8;
 
 .iconclient:hover {
     color: var(--accent-colornav);
+    border-color: var(--accent-colornav);
 }
 
 .iconclient:focus {
     color: var(--accent-colornav);
+    border-color: var(--accent-colornav);
 }
 
 
