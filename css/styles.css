@@ -901,7 +901,7 @@ color:#AFB1B8;
         color: var(--buttontext-color);
     }
 
-    .btn:focus {
+    .item .btn:focus {
         /* background-color: var(--accent-color); */
         outline-color: violet;
     }
@@ -939,9 +939,9 @@ color:#AFB1B8;
         overflow: hidden;
     }
 
-     .items-picture:focus {
+     /* .items-picture:focus {
          color: orange;
-     }
+     } */
 
 
     .overlay {
