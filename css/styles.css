@@ -259,8 +259,8 @@ color: var(--accent-color);
     outline-color: var(--accent-color);
 }
 
-.item .mail:focus,
-.item .phone:focus {
+.contacts-mail:focus,
+.contacts-phone:focus {
     outline-color: var(--accent-color);
 }
 
