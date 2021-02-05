@@ -249,13 +249,18 @@ color: var(--accent-color);
 }
 
 
+.site-nav .link {
+    outline-color: var(--accent-color);
+}
+
+
 .item .link1:focus,
 .item .link2:focus  {
     outline-color: var(--accent-color);
 }
 
-.contacts .mail:focus,
-.contacts .phone:focus {
+.item .mail:focus,
+.item .phone:focus {
     outline-color: var(--accent-color);
 }
 
