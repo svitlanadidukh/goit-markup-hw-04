@@ -842,9 +842,9 @@ color:#AFB1B8;
     color: var(--buttontext-color);
 }
 
-.item .btn:focus {
+/* .item .btn:focus {
     background: orange;
-}
+} */
 
 .button1,
 .btna,
@@ -907,7 +907,8 @@ color:#AFB1B8;
     .item .btnc:focus,
     .item .btnd:focus {
         /* background-color: var(--accent-color); */
-        outline-color: var(--accent-color);
+        outline-color: #2196F3;
+        background: #2196F3;
     }
 
 
