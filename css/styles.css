@@ -901,9 +901,13 @@ color:#AFB1B8;
         color: var(--buttontext-color);
     }
 
-    .item .btn:focus {
+    .item .btn:focus,
+    .item .btna:focus,
+    .item .btnb:focus,
+    .item .btnc:focus,
+    .item .btnd:focus {
         /* background-color: var(--accent-color); */
-        outline-color: violet;
+        outline-color: var(--accent-color);
     }
 
 
