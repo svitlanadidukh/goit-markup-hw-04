@@ -325,7 +325,9 @@ color: var(--accent-color);
     cursor:pointer;
     }
 
-
+.button-main:focus {
+    outline-color: var(--accent-color);
+}
 
 
 
@@ -692,11 +694,11 @@ color:#AFB1B8;
 .iconclient:focus-within {
     /* color: var(--accent-color); */
     border-color: var(--accent-color);
-    fill: var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
 .iconclient:focus {
-    color: var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
 
@@ -986,6 +988,7 @@ color:#AFB1B8;
   .items-cover:hover .overlay,
   .items-cover:focus .overlay {
       transform: translateY(0);
+      outline-color: var(--accent-color);
   }
 
   .ppt {
