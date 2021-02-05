@@ -624,11 +624,11 @@ stroke: none;
 }
 
 .button-icon:focus {
-    fill: var(--accent-color)
+    outline-color: var(--accent-color)
 }
 
 .button-icon:focus-within {
-    color: var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
 
@@ -636,6 +636,13 @@ stroke: none;
 .button-icon + .button-icon {          
     margin-left: 10px;
 }
+
+
+.box-team:focus {
+    outline-color: var(--accent-color);
+}
+
+
 
 
 /*ПОСТОЯННЫЕ КЛИЕНТЫ*/
