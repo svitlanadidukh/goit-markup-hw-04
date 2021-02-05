@@ -901,6 +901,13 @@ color:#AFB1B8;
         color: var(--buttontext-color);
     }
 
+    .btn:focus {
+        /* background-color: var(--accent-color); */
+        outline-color: violet;
+    }
+
+
+
     .btnc {
         min-width: 103px;
     }
