@@ -213,8 +213,9 @@ color: var(--title-text-color)
 
     .phone-icon {                   /*телефон - оригінальний колір*/
         display:flex;
-        fill: var(--text-color);
-        justify-content: first baseline;
+        fill:#757575;
+        align-items: center;
+        
     }
 
     .phone-icon:hover .letter {      /*телефон - ховер*/
@@ -584,7 +585,7 @@ stroke: none;
     fill: var(--accent-colornav);
 } */
 
-.button-ic:hover {
+.button-ic:hover {                          /*ховер на цвет самой иконки*/
     fill: var(--buttontext-color);
 }
 
@@ -601,12 +602,18 @@ stroke: none;
     align-items: center;
 }
 
-.button-icon:focus-within {
-    fill: var(--accent-color);
+
+
+.button-icon:hover {                         /*ховер на бекграунд*/
+    background-color: var(--accent-color);
 }
 
-.button-icon:hover {
-    background-color: var(--accent-color);
+.button-icon:focus {
+    fill: var(--accent-color)
+}
+
+.button-icon:focus-within {
+    color: var(--accent-color);
 }
 
 
@@ -661,10 +668,15 @@ color:#AFB1B8;
 }
 
 .iconclient:focus-within {
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
+
+.iconclient:focus {
+    color: var(--accent-color);
+}
+
 
 
 .logo-1 {
@@ -1137,17 +1149,28 @@ text-transform: uppercase;
     align-items: center;
 }
 
-.button-footer:focus {
-    color: darkgreen;
-}
-
-/* .actions-footer .button-iconfooter:hover  {
-    fill: var(--accent-colornav);
-} */
-
 .actions-footer .button-footer:hover {
     background-color: var(--accent-color);
 }
+
+.actions-footer .button-footer:focus {
+    background-color: var(--accent-color);
+    outline-color: var(--accent-color);
+    color:violet;
+}
+
+/* .actions-footer .button-footer:focus-within {
+    background-color: var(--accent-color);
+} */
+
+
+/* .button-footer:focus {
+    color: darkgreen;
+} */
+
+
+
+
 
 
 .button-iconfooter {
