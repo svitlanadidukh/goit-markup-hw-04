@@ -705,12 +705,13 @@ background-color:#ffffff;
     /* color: var(--accent-color); */
     border-color: var(--accent-color);
     outline-color: var(--accent-color);
-    
+    fill: var(--accent-color);
 }
 
 .iconclient:focus {
     outline-color: var(--accent-color);
-   
+    fill: var(--accent-color);
+    color:var(--accent-color);
 }
 
 
@@ -1315,7 +1316,12 @@ box-sizing: border-box;
 
 
 
-
+.link:focus,     
+.adress:focus,
+.mail:focus,
+.phone:focus {
+    outline-color: var(--accent-colornav)
+}
 
 
 
