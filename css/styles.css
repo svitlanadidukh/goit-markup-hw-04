@@ -705,12 +705,12 @@ background-color:#ffffff;
     /* color: var(--accent-color); */
     border-color: var(--accent-color);
     outline-color: var(--accent-color);
-    stroke: red;
+    
 }
 
 .iconclient:focus {
     outline-color: var(--accent-color);
-    stroke:green;
+   
 }
 
 
