@@ -1319,8 +1319,9 @@ box-sizing: border-box;
 .link:focus,     
 .adress:focus,
 .mail:focus,
-.phone:focus {
-    outline-color: var(--accent-colornav)
+.phone:focus,
+.comp:focus {
+    outline-color: var(--accent-color)
 }
 
 
