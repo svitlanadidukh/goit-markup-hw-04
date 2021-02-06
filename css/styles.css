@@ -592,7 +592,7 @@ stroke: none;
         /*background-color: #2196F3;
         fill: #ffffff;*/
         /* fill:#AFB1B8; */
-        color:#ffffff;
+        /* color:#ffffff; */
         /*outline: 1px solid red;*/
         align-items: center;
         justify-content:center;
@@ -634,13 +634,14 @@ stroke: none;
 .button-icon:focus {                          /*фокус на бекграунд иконки соцсетей при фокусировке*/
     outline-color: var(--accent-color);      /*обводка*/
     background-color: var(--accent-color);
+    fill: #ffffff;
     
 }
 
 .button-icon:focus-within {
     outline-color: var(--accent-color);
     background-color: var(--accent-color);
-    
+    fill:#ffffff;
 }
 
 
