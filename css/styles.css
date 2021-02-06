@@ -634,6 +634,8 @@ stroke: none;
 
 .button-icon:focus-within {
     outline-color: var(--accent-color);
+    background-color: var(--accent-color);
+    fill: #ffffff;
 }
 
 
