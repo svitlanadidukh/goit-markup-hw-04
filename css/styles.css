@@ -691,10 +691,20 @@ color:#AFB1B8;
     fill: var(--accent-color);
 }
 
-.iconclient:focus-within {
+
+/* .iconclient:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+} */
+
+
+
+.item .iconclient:focus-within {
     /* color: var(--accent-color); */
     border-color: var(--accent-color);
     outline-color: var(--accent-color);
+    stroke: red;
 }
 
 .iconclient:focus {
