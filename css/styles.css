@@ -599,23 +599,19 @@ stroke: none;
     }
 
 
-/* .button-ic:hover {
-    fill: var(--accent-colornav);
-} */
-
-.button-ic:hover {                          /*ховер на цвет самой иконки*/
+.button-ic:hover {                          /*ховер на цвет самой иконки cоцсетей при наведении*/
     fill: var(--buttontext-color);
 }
 
-.button-ic:focus {
+/* .button-ic:focus {
+    fill: var(--buttontext-color);            
+    color: var(--buttontext-color);
+} */
+
+.button-ic:focus-within {
     fill: var(--buttontext-color);
     color: var(--buttontext-color);
 }
-
-/* .button-ic:focus-within {
-    fill: var(--buttontext-color);
-    color: var(--buttontext-color);
-} */
 
 .button-icon {
     display: inline-block;
@@ -631,13 +627,12 @@ stroke: none;
 
 
 
-.button-icon:hover {                         /*ховер на бекграунд иконки*/
+.button-icon:hover {                         /*ховер на бекграунд иконки соцсетей при наведении*/
     background-color: var(--accent-color);
 }
 
-.button-icon:focus {
-    outline-color: var(--accent-color);
-   
+.button-icon:focus {                          /*фокус на бекграунд иконки соцсетей при фокусировке*/
+    outline-color: var(--accent-color);      /*обводка*/
     background-color: var(--accent-color);
     
 }
@@ -701,15 +696,11 @@ color:#AFB1B8;
 background-color:#ffffff;
 }
 
-.iconclient:hover {
+.iconclient:hover {                           /*цвет икнки клиентов при наведении меняется на голубой и тоже самое с бордером*/
     color: var(--accent-color);
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
-
-
-
-
 
 
 .item .iconclient:focus-within {
