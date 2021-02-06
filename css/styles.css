@@ -840,7 +840,7 @@ background-color:#ffffff;
         /*background-color: tomato;*/
         margin-bottom: 30px;
         border: 1px solid #EEEEEE;
-    }
+    } 
     
 
 
@@ -979,12 +979,10 @@ background-color:#ffffff;
         
     .items-cover {
         position: relative;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
-     /* .items-picture:focus {
-         color: orange;
-     } */
+     
 
 
     .overlay {
@@ -1090,20 +1088,7 @@ background-color:#ffffff;
         margin-bottom: 20px;
     }
     
-    /* .adress-footer {
-        margin-bottom:9px;
-    } */
-
-    /* .footer-adress {
-        margin-top:0;
-        margin-top:0;
-        padding-bottom:0;
-    }
-     */
     
-/* .footer-mail {
-    margin-top:0;
-} */
 
 .footer-phone {
     margin-top:0;
@@ -1122,18 +1107,7 @@ background-color:#ffffff;
 
 
 
-    /* .mail-base {
-        font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-        display: flex;
-        font-weight: 500;
-        margin-bottom: 9px;
-    font-size: 14px;
-    line-height: 1.14;
     
-    color: rgba(255, 255, 255, 0.6);  
-    } */
     
     .phone {
         display: flex;
@@ -1207,17 +1181,9 @@ text-transform: uppercase;
 .actions-footer .button-footer:focus {
     background-color: var(--accent-color);
     outline-color: var(--accent-color);
-    color:violet;
+    
 }
 
-/* .actions-footer .button-footer:focus-within {
-    background-color: var(--accent-color);
-} */
-
-
-/* .button-footer:focus {
-    color: darkgreen;
-} */
 
 
 
@@ -1236,21 +1202,6 @@ text-transform: uppercase;
 
 
 
-/*.button-iconfooter {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-padding: 0;
-border: none;
-margin-top: 20px;
-margin-bottom: 100px;
-
-fill: #ffffff;
-display: flex;
-    align-items: center;
-    margin-left: auto;
-}*/
 
 
 
@@ -1320,7 +1271,15 @@ box-sizing: border-box;
 .adress:focus,
 .mail:focus,
 .phone:focus,
-.comp:focus {
+.comp:focus,
+.basketball:focus,
+.seafood:focus,
+.headphones:focus,
+.boxes:focus,
+.comp2:focus,
+.book:focus,
+.lab:focus,
+.business:focus {
     outline-color: var(--accent-color)
 }
 
@@ -1337,14 +1296,6 @@ box-sizing: border-box;
 
 
 
-/* .base {
-    width: 1200;
-    /*align-items: auto;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
- */
 
 
 
