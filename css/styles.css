@@ -610,6 +610,10 @@ stroke: none;
     fill: var(--buttontext-color);
 }
 
+.button-ic:focus-within {
+    fill: var(--buttontext-color);
+}
+
 .button-icon {
     display: inline-block;
     width: 20px;
