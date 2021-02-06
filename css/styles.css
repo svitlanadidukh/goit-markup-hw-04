@@ -592,6 +592,7 @@ stroke: none;
         /*background-color: #2196F3;
         fill: #ffffff;*/
         fill:#AFB1B8;
+        color:#ffffff;
         /*outline: 1px solid red;*/
         align-items: center;
         justify-content:center;
@@ -1174,13 +1175,8 @@ text-transform: uppercase;
 
 .actions-footer .button-footer:focus {
     background-color: var(--accent-color);
-    outline-color: var(--accent-color);
-    
+    outline-color: var(--accent-color); 
 }
-
-
-
-
 
 
 
