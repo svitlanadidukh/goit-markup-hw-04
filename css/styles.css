@@ -631,18 +631,18 @@ stroke: none;
     background-color: var(--accent-color);
 }
 
-.button-icon:focus {                          /*фокус на бекграунд иконки соцсетей при фокусировке*/
-    outline-color: var(--accent-color);      /*обводка*/
+.button-icon:focus {                          /*фокус на бекграунд иконки соцсетей при фокусировке */
+    outline-color: var(--accent-color);      
     background-color: var(--accent-color);
     fill: #ffffff;
     
 }
 
-.button-icon:focus-within {
+/* .button-icon:focus-within {
     outline-color: var(--accent-color);
     background-color: var(--accent-color);
     fill:#ffffff;
-}
+} */
 
 
 
