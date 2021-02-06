@@ -628,6 +628,7 @@ stroke: none;
 .button-icon:focus {
     outline-color: var(--accent-color);
     fill: #ffffff;
+    background-color: var(--accent-color);
     
 }
 
