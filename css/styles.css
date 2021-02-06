@@ -979,7 +979,7 @@ background-color:#ffffff;
         
     .items-cover {
         position: relative;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
      
