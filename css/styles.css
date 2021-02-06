@@ -176,7 +176,7 @@ color: var(--title-text-color)
     } */
 
    .envelope-icon {                   /*конверт - оригінальний колір*/
-       display:flex;
+       display:inline-block;
        fill: var(--text-color); 
    }
    
