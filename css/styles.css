@@ -724,29 +724,20 @@ background-color:#ffffff;
     color:var(--accent-color);
 }
 
+
+
+
+
 .logo-1 {
-     width: 44.27px;
+    width: 44.27px;
     height: 49.23px;
     margin-top:20px;
     margin-bottom:20.77px;
     margin-left:63px;
     margin-right:62.73px;
-    background-image: #AFB1B8;
     fill:currentColor;
 }
 
-
-
-/*.logo-1 {
-    width: 44.27px;
-    height: 49.23px; 
-    margin-top:20px;
-    margin-bottom:20.77px;
-    margin-left:63px;
-    margin-right:62.73px;
-    background-image: #AFB1B8;
-    fill:currentColor;
-}*/
 
 .logo-1:hover,
 .logo-2:hover,
