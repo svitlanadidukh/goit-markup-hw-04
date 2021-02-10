@@ -154,7 +154,6 @@ color: var(--title-text-color)
 }
 
 .contacts-mail {
-    margin-left: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -177,21 +176,25 @@ color: var(--title-text-color)
 
    .envelope-icon {                   /*конверт - оригінальний колір*/
        display:inline-block;
-       fill: var(--text-color); 
+       fill:currentColor;
+       /* fill: var(--text-color);   */
+       margin-right: 10px;
    }
    
 
-   .envelope-icon:hover .letter {      /*конверт - ховер*/
+   /* .envelope-icon:hover .letter {      /*конверт - ховер
        fill: var(--accent-color)   
-   }
+   } */
      
-   .envelope-icon:focus .letter {      /*конверт - фокус*/
-    fill: var(--accent-color)   
-}
+   /* .envelope-icon:focus .letter {      /*конверт - фокус
+    fill: var(--accent-color);  
+} */
 
+/* .phone-icon:hover .letter {      /*конверт - ховер
+    fill: var(--accent-color)   
+} */
 
     .contacts-phone {
-    margin-left: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -212,34 +215,29 @@ color: var(--title-text-color)
 
 
     .phone-icon {                   /*телефон - оригінальний колір*/
-        display:flex;
-        fill:#757575;
+        display:inline-block;
+        fill:currentColor;
         align-items: center;
+        margin-right: 10px;
         
     }
 
-    .phone-icon:hover .letter {      /*телефон - ховер*/
-        fill: var(--accent-color)   
-    }
-      
-    .phone-icon:focus .letter {      /*телефон - фокус*/
-     fill: var(--accent-color)   
- }
 
-
-
-    
-.contacts .contacts-mail:hover,       /*ховер на мейл и телефон*/
-.contacts .contacts-phone:hover {
-color: var(--accent-color);
+.contacts-mail:focus,
+.contacts-mail:hover {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
-
-
-.contacts .contacts-mail:focus,         /*фокус на мейл и телефон*/
-.contacts .contacts-phone:focus {
-color: var(--accent-color);
+.contacts-phone:hover,
+.contacts-phone:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+    outline-color: var(--accent-color);
 }
+
+         
 
 
 
@@ -259,12 +257,21 @@ color: var(--accent-color);
     outline-color: var(--accent-color);
 }
 
-.contacts-mail:focus,
+/* .contacts-mail:focus,
 .contacts-phone:focus {
     outline-color: var(--accent-color);
 }
 
+.contacts-mail:hover,
+.contacts-phone:hover {
+    outline-color: var(--accent-color);
+}
 
+
+.item.mail:hover {
+fill: black;
+color:white;
+} */
 
 
 /*HERO*/
@@ -717,10 +724,8 @@ background-color:#ffffff;
     color:var(--accent-color);
 }
 
-
-
-.logo-1 {
-    width: 44.27px;
+.iconclient .logo-1 {
+     width: 44.27px;
     height: 49.23px;
     margin-top:20px;
     margin-bottom:20.77px;
@@ -730,7 +735,20 @@ background-color:#ffffff;
     fill:currentColor;
 }
 
-.logo-1:hover,
+
+
+/*.logo-1 {
+    width: 44.27px;
+    height: 49.23px; 
+    margin-top:20px;
+    margin-bottom:20.77px;
+    margin-left:63px;
+    margin-right:62.73px;
+    background-image: #AFB1B8;
+    fill:currentColor;
+}*/
+
+.icon-client.logo-1:hover,
 .logo-2:hover,
 .logo-3:hover,
 .logo-4:hover,
@@ -749,14 +767,17 @@ background-color:#ffffff;
 }
 
 
-.logo-2 {
+
+
+
+.iconclient .logo-2 {
     width: 40px;
     height: 52px;
     margin: 19px 65px;
     fill:currentColor;
 }
 
-.logo-3 {
+.iconclient .logo-3 {
     width: 41px;
     height: 42.6px;
     margin-top: 24px;
@@ -766,7 +787,7 @@ background-color:#ffffff;
     fill:currentColor;
 }
 
-.logo-4 {
+.iconclient .logo-4 {
     width: 79.66px;
     height: 42.02px;
     margin-top: 24px;
@@ -777,7 +798,7 @@ background-color:#ffffff;
     fill:currentColor;
 }
 
-.logo-5 {
+.iconclient .logo-5 {
     width: 59px;
     height: 47px;
     margin-top: 22px;
@@ -787,7 +808,7 @@ background-color:#ffffff;
     fill:currentColor;
 }
 
-.logo-6 {
+.iconclient .logo-6 {
     width: 88.48px;
     height: 45.44px;
     margin-top: 22px;
@@ -913,6 +934,7 @@ background-color:#ffffff;
     
     .btn {
         min-width: 73px;
+        height: 38px;
     }
 
      .btna:hover,
@@ -922,11 +944,15 @@ background-color:#ffffff;
      }
 
 
-    
+    .btna {
+        min-width:128px;
+        height:38px;
+    }
 
     
     .btnb {
         min-width: 145px;
+        height: 38px;
     }
     
     .btnb:hover,
@@ -950,6 +976,7 @@ background-color:#ffffff;
 
     .btnc {
         min-width: 103px;
+        height: 38px;
     }
 
     .btnc:hover,
@@ -960,6 +987,7 @@ background-color:#ffffff;
     
     .btnd {
         min-width: 130px;
+        height:38px;
     }
     
     .btnd:hover,
@@ -985,12 +1013,14 @@ background-color:#ffffff;
     background: rgba (33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms linear;
+    
 }
 
   .items-cover:hover .overlay,
   .items-cover:focus .overlay {
       transform: translateY(0);
       outline-color: var(--accent-color);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 
   .ppt {
@@ -1074,13 +1104,21 @@ background-color:#ffffff;
         margin-bottom: 20px;
     }
     
-    
+    .footer-mail {
+        margin-top:9px;
+        margin-bottom:9px;
+    }
+
 
 .footer-phone {
     margin-top:0;
     margin-bottom:0;
 }
 
+.adress-footer {
+
+    margin:0;
+}
 
 
     .mail { 
@@ -1179,6 +1217,9 @@ text-transform: uppercase;
  fill: #ffffff;
  /* outline: 1px solid red; */
 }
+
+      
+
 
 
 
